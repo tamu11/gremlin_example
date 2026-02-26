@@ -311,6 +311,7 @@ def find_experts_by_knowledge(knowledge_topic, limit=10):
         result = submit(
             "g.V().has('KnowledgeArea', 'name', topic)"
             ".in('COVERS').in('AUTHORED')"
+            ".hasLabel('Person')"          # ← enforces node type
             ".groupCount().unfold()"
             ".order().by(values, decr).limit(lim)",
             bindings={"topic": knowledge_topic, "lim": limit}
