@@ -1,0 +1,100 @@
+# ✅ Windows Setup Complete!
+
+I've successfully set up the Gremlin graph database example. Here's what you have:
+
+## 📦 What's Included
+
+1. **Docker Setup** - Uses official `janusgraph/janusgraph` image
+2. **PowerShell Scripts** (for Windows users):
+   - `start_database.ps1` - Starts JanusGraph container
+   - `stop_database.ps1` - Stops and removes container
+3. **Bash Scripts** (for Git Bash/WSL):
+   - `scripts/start_database.sh`
+   - `scripts/stop_database.sh`
+4. **Python Scripts**:
+   - `scripts/load_sample_data.py` - Loads sample data
+   - `scripts/query_experts.py` - Queries for experts
+5. **Documentation**:
+   - `SETUP_GUIDE.md` - Detailed instructions with Windows-specific guidance
+   - `README.md` - Overview and usage
+
+## 🚀 Windows Quick Start
+
+### Using PowerShell (Recommended)
+
+1. **Start the database**
+   - Right-click `start_database.ps1`
+   - Select "Run with PowerShell"
+   - This will start the JanusGraph container
+
+2. **Load sample data** (wait 30-60 seconds after starting)
+   - Open PowerShell or CMD
+   - Navigate to the directory: `cd D:\Workspace\gremlin_example`
+   - Run: `python scripts/load_sample_data.py`
+
+3. **Query for experts**
+   - Run: `python scripts/query_experts.py`
+   - You'll see results showing experts by topic
+
+4. **Stop when done**
+   - Right-click `stop_database.ps1`
+   - Select "Run with PowerShell"
+
+### Using Docker Directly
+
+```powershell
+# Start JanusGraph
+docker run -d --name janusgraph -p 8182:8182 -v ${env:PWD}\conf:/janusgraph/conf janusgraph/janusgraph
+
+# Wait 30 seconds, then:
+python scripts/load_sample_data.py
+python scripts/query_experts.py
+
+# When done:
+docker stop janusgraph
+```
+
+## 📊 Sample Output
+
+The query script will show results like:
+
+```
+#1
+Name: Alice Johnson
+ID: p1
+Email: alice.johnson@company.com
+Department: Engineering
+Topics: Machine Learning
+-----------------------
+#2
+Name: Bob Smith
+ID: p2
+Email: bob.smith@company.com
+Department: Engineering
+Topics: Machine Learning, Deep Learning
+...
+```
+
+## 📖 Documentation
+
+- **SETUP_GUIDE.md** - Contains Windows-specific instructions for running the scripts
+- **README.md** - Overall project documentation
+
+## 💡 Troubleshooting Tips
+
+1. **Docker Desktop must be running** - Make sure it's started
+2. **Wait for initialization** - After starting, wait 30-60 seconds before loading data
+3. **Port conflicts** - Check if port 8182 is available
+4. **Permission issues** - Run PowerShell as Administrator if needed
+
+## 🎯 Key Features
+
+✅ Works on Windows with PowerShell
+✅ Sample data included and ready to use
+✅ Flexible queries to find experts by topic
+✅ Easy to customize and extend
+✅ Standalone demo available (no Docker needed)
+
+Enjoy exploring graph databases! 🚀
+
+For detailed instructions, see **SETUP_GUIDE.md**

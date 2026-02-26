@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  janusgraph:
+    image: janusgraph/janusgraph:1.0.0
+    container_name: janusgraph
+    ports:
+      - "8182:8182"
+    volumes:
+      - ./conf:/janusgraph/conf
+    environment:
+      - JAVA_OPTS=-Xms256m -Xmx1g
+    restart: unless-stopped

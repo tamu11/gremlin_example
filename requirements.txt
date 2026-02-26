@@ -1,0 +1,17 @@
+# Requirements for Gremlin Example Project
+# These are the dependencies needed to run the graph database examples
+
+# Core graph database library
+gremlinpython==3.8.0
+
+# Graph visualization and analysis
+networkx==3.6.1
+matplotlib==3.10.8
+
+# Docker client (optional, for programmatic Docker control)
+docker==7.1.0
+
+# Additional useful packages (already installed as dependencies)
+aiohttp>=3.0.0
+multidict>=4.0.0
+yarl>=1.0.0

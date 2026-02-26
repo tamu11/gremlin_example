@@ -1,0 +1,39 @@
+Creating expert graph using NetworkX...
+Graph created with 19 nodes and 17 edges
+
+=== Experts in Machine Learning ===
+  Document doc1 covers Machine Learning
+  Checking document doc1
+    Alice Johnson authored doc1
+    Bob Smith authored doc1
+    Eve Brown authored doc1
+  1. Alice Johnson (Data Scientist) - alice.johnson@company.com
+  2. Bob Smith (Software Engineer) - bob.smith@company.com
+  3. Eve Brown (ML Engineer) - eve.brown@company.com
+
+=== Experts in Deep Learning ===
+  Document doc4 covers Deep Learning
+  Checking document doc4
+    Alice Johnson authored doc4
+    Eve Brown authored doc4
+  1. Alice Johnson (Data Scientist) - alice.johnson@company.com
+  2. Eve Brown (ML Engineer) - eve.brown@company.com
+
+=== Experts in Cloud Computing ===
+  Document doc2 covers Cloud Computing
+  Checking document doc2
+    Frank Miller authored doc2
+  1. Frank Miller (Cloud Architect) - frank.miller@company.com
+
+=== Experts in DevOps ===
+  Document doc5 covers DevOps
+  Checking document doc5
+    Frank Miller authored doc5
+    Grace Lee authored doc5
+  1. Frank Miller (Cloud Architect) - frank.miller@company.com
+  2. Grace Lee (DevOps Engineer) - grace.lee@company.com
+
+Generating visualization...
+Graph visualization saved as 'expert_graph.png'
+
+Demo completed successfully!

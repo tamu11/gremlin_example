@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv-bak/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and database
+db.sqlite3
+*.log
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.tmp
+*nul
+null
+
+# Test results
+.coverage
+.html
+
+# Build artifacts
+/dist
+/build

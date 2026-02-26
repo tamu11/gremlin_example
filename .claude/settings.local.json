@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(chmod +x:*)",
+      "Bash(./scripts/start_database.sh:*)",
+      "Bash(./scripts/stop_database.sh:*)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(bash:*)",
+      "Bash(ls:*)",
+      "Bash(source:*)",
+      "Bash(docker info:*)",
+      "Bash(curl:*)",
+      "Bash(.venv/Scripts/python:*)",
+      "Bash(scripts/.venv/bin/python:*)"
+    ]
+  }
+}

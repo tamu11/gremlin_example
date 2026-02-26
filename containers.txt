@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE                   COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+55518ceb8036   janusgraph/janusgraph   "docker-entrypoint.s…"   4 hours ago   Up 4 hours   0.0.0.0:8182->8182/tcp, [::]:8182->8182/tcp   janusgraph
